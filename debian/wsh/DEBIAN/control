@@ -1,0 +1,10 @@
+Package: wsh
+Version: 1.0-1
+Architecture: amd64
+Maintainer: Witherking25 <Witherking@WitherTech.com>
+Installed-Size: 21
+Depends: libc6 (>= 2.4), libreadline7 (>= 6.0)
+Section: misc
+Priority: optional
+Description: Withertech SHell
+ Withertech SHell is a shell with basic functionality for people new at linux

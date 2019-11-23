@@ -1,0 +1,12 @@
+Source: wsh
+Maintainer: Witherking25 <Witherking@WitherTech.com>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 10), libreadline-dev
+
+Package: wsh
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Withertech SHell
+ Withertech SHell is a shell with basic functionality for people new at linux
