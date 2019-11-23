@@ -8,6 +8,7 @@
 #include<sys/wait.h> 
 #include<readline/readline.h> 
 #include<readline/history.h> 
+#include<netdb.h>
 
   
 #define MAXCOM 1000 // max number of letters to be supported 
@@ -79,10 +80,18 @@ void printDir()
 { 
 
     char cwd[1024]; 
+    const char *ipstr = "127.0.0.1";
+    char* username = getenv("USER"); 
+    struct in_addr ip;
+    struct hostent *hp;
 
-    getcwd(cwd, sizeof(cwd)); 
+    if (!inet_aton(ipstr, &ip))
+            errx(1, "can't parse IP address %s", ipstr);
 
-    printf("\nDir: %s", cwd); 
+    if ((hp = gethostbyaddr((const void *)&ip, sizeof ip, AF_INET)) == NULL)
+            errx(1, "no name associated with %s", ipstr);    getcwd(cwd, sizeof(cwd)); 
+
+    printf("\n%s@%s: %s", username, hp->h_name, cwd); 
 } 
 
   

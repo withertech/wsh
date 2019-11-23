@@ -1,13 +1,13 @@
 Package: wsh-dbgsym
 Package-Type: ddeb
 Source: wsh
-Version: 1.0-1
+Version: 1.1-1
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: Witherking25 <Witherking@WitherTech.com>
-Installed-Size: 16
-Depends: wsh (= 1.0-1)
+Installed-Size: 17
+Depends: wsh (= 1.1-1)
 Section: debug
 Priority: optional
 Description: debug symbols for wsh
-Build-Ids: 2e94cf0b4a86faa74c6abc2002774ec26f7f6094
+Build-Ids: c96794ea74e06ba262162a37fadc6ebc3f46682f

@@ -1,5 +1,6 @@
-wsh (1.0-1) UNRELEASED; urgency=medium
+wsh (1.1-1) UNRELEASED; urgency=medium
 
-  * Initial release. (Closes: #XXXXXX)
+  * Added User@Hostname to shell. (Closes: #XXXXXX)
+  * 
 
- -- Witherking25 <Witherking@WitherTech.com>  Fri, 22 Nov 2019 14:43:07 -0600
+ -- Witherking25 <witherking25@WitherTech-DESKTOP-Kalibuntu>  Sat, 23 Nov 2019 00:20:51 -0600
